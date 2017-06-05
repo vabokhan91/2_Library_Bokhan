@@ -1,0 +1,7 @@
+Book "Tri Bratishki" 322 fiction "Erikh Maria Remark"
+Book "Tri Bratishki" 300 detective "wwwh Maria Remark"
+Newspaper "Times" 30 weekly
+Magazine "Maxim" 100 adults
+Book "Idiot" 123 fiction "Dostoevsky Fedor Mikhailovich"
+Book "Brothers Karamazovy tri" 567 fiction "Dostoevsky Fedor Mikhailovich"
+Book "Brothers Karamazovy" 560 fiction "Dostoevsky Fedor Mikhailovich"
