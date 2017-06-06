@@ -1,7 +1,14 @@
-Book "Tri Bratishki" 322 fiction "Erikh Maria Remark"
-Book "Tri Bratishki" 300 detective "wwwh Maria Remark"
+Book "Three Comrades" 322 novel "Erich Maria Remarque"
+Book "Three Mushketeers" 300 novel "Alexandre Dumas"
 Newspaper "Times" 30 weekly
-Magazine "Maxim" 100 adults
-Book "Idiot" 123 fiction "Dostoevsky Fedor Mikhailovich"
-Book "Brothers Karamazovy tri" 567 fiction "Dostoevsky Fedor Mikhailovich"
-Book "Brothers Karamazovy" 560 fiction "Dostoevsky Fedor Mikhailovich"
+Newspaper "The Guardian" 20 monthly
+Newspaper "SomeName" 40 wrongPeriodicity
+Magazine "Time" 100 adults
+Magazine "Funny pictures" 100 children
+Magazine "someName" 20 wrongAgeCategory
+Book "Capitan's daughter" 150 Historical "Alexandre Pushkin"
+Book "Статский советник" 315 Detective "Boris Akunin"
+Book "The Count of Monte Cristo" 560 Adventure "Alexandre Dumas"
+wrongType "some name" 44 Adventure "some author"
+Book "some name" wrongPages detective "adadad"
+Book "123" 45 wrongGenre "somename"

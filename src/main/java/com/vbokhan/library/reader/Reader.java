@@ -18,7 +18,7 @@ public class Reader {
     private final static Logger LOGGER = LogManager.getLogger();
 
     public List<String> readDataFromFile(String fileName) throws NoFileException {
-        if (fileName == null || fileName.length() == 0) {
+        if (fileName == null || fileName.isEmpty()) {
             throw new NoFileException(String.format("File %s not found", fileName));
         }
         List<String> dataFromFile = null;

@@ -4,7 +4,7 @@ package com.vbokhan.library.enums;
  * Created by vbokh on 03.06.2017.
  */
 public enum Genre {
-    FICTION("Fiction"), DETECTIVE("Detective");
+    DETECTIVE("Detective"), NOVEL("Novel"), HISTORICAL("Historical"), ADVENTURE("Adventure"), FANTASY("Fantasy"), FAIRY_TALE("Fairytale");
 
     private String nameOfGenre;
 

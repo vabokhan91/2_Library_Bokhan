@@ -32,6 +32,22 @@ public class Magazine extends Issue {
                 "} " ;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
 
+        Magazine magazine = (Magazine) o;
+
+        return getAgeCategory() == magazine.getAgeCategory();
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + (getAgeCategory() != null ? getAgeCategory().hashCode() : 0);
+        return result;
+    }
 }
 

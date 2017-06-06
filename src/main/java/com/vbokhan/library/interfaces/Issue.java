@@ -41,4 +41,22 @@ public abstract class Issue {
         return "name='" + name + '\'' +
                 ", numberOfPages=" + numberOfPages;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Issue issue = (Issue) o;
+
+        if (getName() != null ? !getName().equals(issue.getName()) : issue.getName() != null) return false;
+        return getNumberOfPages() != null ? getNumberOfPages().equals(issue.getNumberOfPages()) : issue.getNumberOfPages() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getName() != null ? getName().hashCode() : 0;
+        result = 31 * result + (getNumberOfPages() != null ? getNumberOfPages().hashCode() : 0);
+        return result;
+    }
 }

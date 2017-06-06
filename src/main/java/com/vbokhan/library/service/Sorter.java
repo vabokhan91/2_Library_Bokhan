@@ -46,25 +46,9 @@ public class Sorter {
         return listForSorting;
     }
 
-    public static List<Issue> findByNumberOfPages(List<? extends Issue> issues, int from, int to) {
-        List<Issue> foundIssues = new ArrayList<>();
-        issues.stream().filter(issue -> issue.getNumberOfPages() >= from && issue.getNumberOfPages() <= to).forEach(foundIssues::add);
-        return foundIssues;
-    }
 
-    public static List<Issue> findIssueByPreciseName(List<? extends Issue> issues, String name) {
-        List<Issue> foundIssues = new ArrayList<>();
-        issues.stream().filter(issue -> issue.getName().equalsIgnoreCase(name)).forEach(foundIssues::add);
-        return foundIssues;
-    }
 
-    public static List<Issue> findIssueByPartialName(List<? extends Issue> issues, String partialName) {
-        List<Issue> foundIssues = new ArrayList<>();
-        issues.stream().filter(issue -> issue.getName().toLowerCase().contains(partialName.toLowerCase())).forEach(foundIssues::add);
-        return foundIssues;
-    }
-
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Parser parser = new Parser();
         Reader reader = new Reader();
         IssueValidator validator = new IssueValidator();
@@ -74,10 +58,10 @@ public class Sorter {
             List<LinkedList<String >> res = parser.parseData(strings);
             List<Issue> result = factory.createIssue(res);
             List<Book> books = new ArrayList<>();
-            books.add(new Book("Raki1", 111, Genre.FICTION, "Besedka1"));
-            books.add(new Book("Raki2", 212, Genre.FICTION, "Besedka2"));
+            books.add(new Book("Raki1", 111, Genre.NOVEL, "Besedka1"));
+            books.add(new Book("Raki2", 212, Genre.HISTORICAL, "Besedka2"));
             books.add(new Book("Raki3", 313, Genre.DETECTIVE, "Besedka3"));
-            books.add(new Book("Raki4", 209, Genre.FICTION, "Besedka4"));
+            books.add(new Book("Raki4", 209, Genre.ADVENTURE, "Besedka4"));
             books.add(new Book("Raki5", 2111, Genre.DETECTIVE, "Besedka5"));
 
             Sorter.sortByNameDESC(result);
@@ -100,5 +84,5 @@ public class Sorter {
         } catch (MissingDataException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 }

@@ -1,0 +1,29 @@
+2017-06-05 21:50:42.907 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.BOSOK
+2017-06-05 23:29:52.751 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-05 23:29:52.758 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-05 23:30:13.277 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-05 23:30:13.282 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 00:15:15.448 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 00:15:15.453 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 00:29:12.196 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 00:29:12.202 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 00:29:29.897 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 00:29:29.901 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 02:17:55.876 [main] ERROR com.vbokhan.library.factory.IssueFactory - No data was received for creating issue object
+2017-06-06 02:24:05.861 [main] ERROR com.vbokhan.library.factory.IssueFactory - No data was received for creating issue object
+2017-06-06 02:24:05.866 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of book. Wrong number of values 3. Need 4
+2017-06-06 02:24:05.867 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of book. Wrong number of values 5. Need 4
+2017-06-06 02:28:10.081 [main] ERROR com.vbokhan.library.factory.IssueFactory - No data was received for creating issue object
+2017-06-06 02:28:10.085 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of Newpaper. Wrong number of values 4. Need 3
+2017-06-06 02:28:10.085 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of book. Wrong number of values 5. Need 4
+2017-06-06 03:06:10.796 [main] ERROR com.vbokhan.library.factory.IssueFactory - No data was received for creating issue object
+2017-06-06 03:06:10.801 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of Newpaper. Wrong number of values 4. Need 3
+2017-06-06 03:06:10.802 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of book. Wrong number of values 5. Need 4
+2017-06-06 03:06:10.964 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 03:06:10.964 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 13:13:35.740 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 13:13:35.756 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 13:34:30.168 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 13:34:30.178 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 13:34:30.219 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 13:34:30.220 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE

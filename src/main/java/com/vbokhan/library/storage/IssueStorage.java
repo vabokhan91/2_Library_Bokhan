@@ -8,6 +8,8 @@ import java.util.List;
 /**
  * Created by vbokh on 04.06.2017.
  */
+
+/* Do we need this class ???*/
 public class IssueStorage {
     private List<Issue> issueStorage;
     private static IssueStorage instance;

@@ -18,11 +18,8 @@ import static org.junit.Assert.assertEquals;
  * Created by vbokh on 04.06.2017.
  */
 public class CalculatorTest {
-    private static Integer numberOfDetectivePages = 322;
-    private static Integer numberOfFictionPages = 1572;
-    private static List<Issue> issues;
+    private static Integer numberOfNovelPages = 622;
     private static Reader reader;
-    private static IssueValidator validator;
     private static Parser parser;
     private static IssueFactory factory;
     private static final String FILE_NAME = "src/main/resources/data.txt";
@@ -30,7 +27,6 @@ public class CalculatorTest {
     @BeforeClass
     public static void init() {
         reader = new Reader();
-        validator = new IssueValidator();
         parser = new Parser();
         factory = new IssueFactory();
     }
@@ -41,8 +37,8 @@ public class CalculatorTest {
         List<LinkedList<String>> parsedData = parser.parseData(dataFromFile);
         List<Issue> issues = factory.createIssue(parsedData);
 
-        Integer actual = Calculator.calculatePagesByGenre(issues, Genre.FICTION);
-        assertEquals(numberOfFictionPages, actual);
+        Integer actual = Calculator.calculatePagesByGenre(issues, Genre.NOVEL);
+        assertEquals(numberOfNovelPages, actual);
     }
 
 }

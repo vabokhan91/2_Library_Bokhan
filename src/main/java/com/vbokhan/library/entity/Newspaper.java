@@ -31,4 +31,22 @@ public class Newspaper extends Issue {
                 "periodicity=" + periodicity +
                 "} ";
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        Newspaper newspaper = (Newspaper) o;
+
+        return getPeriodicity() == newspaper.getPeriodicity();
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + (getPeriodicity() != null ? getPeriodicity().hashCode() : 0);
+        return result;
+    }
 }

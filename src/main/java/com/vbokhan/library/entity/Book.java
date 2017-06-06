@@ -40,4 +40,24 @@ public class Book extends Issue {
     public void setAuthor(String author) {
         this.author = author;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        Book book = (Book) o;
+
+        if (getGenre() != book.getGenre()) return false;
+        return getAuthor() != null ? getAuthor().equals(book.getAuthor()) : book.getAuthor() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + (getGenre() != null ? getGenre().hashCode() : 0);
+        result = 31 * result + (getAuthor() != null ? getAuthor().hashCode() : 0);
+        return result;
+    }
 }
