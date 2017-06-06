@@ -1,14 +1,13 @@
 package com.vbokhan.library.reader;
 
 import com.vbokhan.library.exception.NoFileException;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by vbokh on 05.06.2017.

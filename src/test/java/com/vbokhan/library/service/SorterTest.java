@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by vbokh on 06.06.2017.
@@ -54,7 +54,7 @@ public class SorterTest {
     public void sortByNameASC() throws Exception {
         String expected = "Capitan's daughter";
         Sorter.sortByNameASC(testListSortingIssues);
-        String actual = testListSortingIssues.get(0).getName();
+        String actual = testListSortingIssues.get(0).getTitle();
         assertEquals(expected, actual);
 
     }

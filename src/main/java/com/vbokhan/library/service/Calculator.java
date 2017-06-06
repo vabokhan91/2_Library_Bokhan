@@ -6,7 +6,6 @@ import com.vbokhan.library.exception.MissingDataException;
 import com.vbokhan.library.interfaces.Issue;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * Created by vbokh on 04.06.2017.

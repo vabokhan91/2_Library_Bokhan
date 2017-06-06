@@ -27,3 +27,21 @@
 2017-06-06 13:34:30.178 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
 2017-06-06 13:34:30.219 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
 2017-06-06 13:34:30.220 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 14:00:03.557 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.ADAD
+2017-06-06 14:00:28.891 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of book. Wrong number of values 3. Need 4
+2017-06-06 14:11:51.345 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 14:11:51.349 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 14:14:31.824 [main] ERROR com.vbokhan.library.factory.IssueFactory - Field author can not be null
+2017-06-06 14:14:43.760 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 14:14:43.764 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 14:14:43.766 [main] ERROR com.vbokhan.library.factory.IssueFactory - Field author can not be null
+2017-06-06 14:49:42.992 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 14:49:43.003 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 14:49:43.006 [main] ERROR com.vbokhan.library.factory.IssueFactory - Field author can not be null
+2017-06-06 14:49:43.028 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 14:49:43.029 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 14:53:40.465 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 14:53:40.471 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-06 14:53:40.474 [main] ERROR com.vbokhan.library.factory.IssueFactory - Field author can not be null
+2017-06-06 14:53:40.496 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-06 14:53:40.501 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE

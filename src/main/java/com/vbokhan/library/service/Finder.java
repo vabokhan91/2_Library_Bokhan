@@ -17,13 +17,13 @@ public class Finder {
 
     public static List<Issue> findIssueByPreciseName(List<? extends Issue> issues, String name) {
         ArrayList<Issue> foundIssues = new ArrayList<>();
-        issues.stream().filter(issue -> issue.getName().equalsIgnoreCase(name)).forEach(foundIssues::add);
+        issues.stream().filter(issue -> issue.getTitle().equalsIgnoreCase(name)).forEach(foundIssues::add);
         return foundIssues;
     }
 
     public static List<Issue> findIssueByPartialName(List<? extends Issue> issues, String partialName) {
         ArrayList<Issue> foundIssues = new ArrayList<>();
-        issues.stream().filter(issue -> issue.getName().toLowerCase().contains(partialName.toLowerCase())).forEach(foundIssues::add);
+        issues.stream().filter(issue -> issue.getTitle().toLowerCase().contains(partialName.toLowerCase())).forEach(foundIssues::add);
         return foundIssues;
     }
 }

@@ -1,14 +1,7 @@
 package com.vbokhan.library.service;
 
 import com.vbokhan.library.entity.Book;
-import com.vbokhan.library.enums.Genre;
-import com.vbokhan.library.exception.MissingDataException;
-import com.vbokhan.library.exception.NoFileException;
-import com.vbokhan.library.factory.IssueFactory;
 import com.vbokhan.library.interfaces.Issue;
-import com.vbokhan.library.parser.Parser;
-import com.vbokhan.library.reader.Reader;
-import com.vbokhan.library.validator.IssueValidator;
 
 import java.util.*;
 
@@ -17,12 +10,12 @@ import java.util.*;
  */
 public class Sorter {
     public static List<Issue> sortByNameASC(List<Issue> listForSorting) {
-        listForSorting.sort((Issue a1, Issue a2)->a1.getName().compareTo(a2.getName()));
+        listForSorting.sort((Issue a1, Issue a2)->a1.getTitle().compareTo(a2.getTitle()));
         return listForSorting;
     }
 
     public static List<Issue> sortByNameDESC(List<Issue> listForSorting) {
-        listForSorting.sort((Issue a1, Issue a2)->a2.getName().compareTo(a1.getName()));
+        listForSorting.sort((Issue a1, Issue a2)->a2.getTitle().compareTo(a1.getTitle()));
         return listForSorting;
     }
 
@@ -37,7 +30,7 @@ public class Sorter {
     }
 
     public static List<Issue> sortByNameAndPages(List<Issue> listForSorting) {
-        listForSorting.sort((Comparator.comparing(Issue::getName).thenComparing(Issue::getNumberOfPages)));
+        listForSorting.sort((Comparator.comparing(Issue::getTitle).thenComparing(Issue::getNumberOfPages)));
         return listForSorting;
     }
 

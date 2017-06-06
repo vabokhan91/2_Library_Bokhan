@@ -4,7 +4,6 @@ import com.vbokhan.library.factory.IssueFactoryTest;
 import com.vbokhan.library.parser.ParserTest;
 import com.vbokhan.library.reader.ReaderTest;
 import com.vbokhan.library.service.CalculatorTest;
-import com.vbokhan.library.service.Finder;
 import com.vbokhan.library.service.FinderTest;
 import com.vbokhan.library.service.SorterTest;
 import com.vbokhan.library.validator.IssueValidatorTest;

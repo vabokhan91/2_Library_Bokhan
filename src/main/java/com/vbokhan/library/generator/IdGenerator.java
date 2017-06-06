@@ -1,7 +1,5 @@
 package com.vbokhan.library.generator;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 /**
  * Created by vbokh on 31.05.2017.
  */

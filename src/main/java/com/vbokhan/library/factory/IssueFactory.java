@@ -15,6 +15,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by vbokh on 04.06.2017.
@@ -22,7 +23,7 @@ import java.util.List;
 public class IssueFactory {
     private final static Logger LOGGER = LogManager.getLogger();
 
-    public List<Issue> createIssue(List<LinkedList<String>> dataForCreatingIssue) throws MissingDataException{
+    public List<Issue> createIssue(List<LinkedList<String>> dataForCreatingIssue) throws MissingDataException {
         List<Issue> issues = new ArrayList<>();
         if (dataForCreatingIssue == null || dataForCreatingIssue.isEmpty()) {
             throw new MissingDataException("No data was received for creating issues");
@@ -58,60 +59,42 @@ public class IssueFactory {
                 LOGGER.log(Level.ERROR, e.getMessage());
             } catch (WrongNumberOfValuesException e) {
                 LOGGER.log(Level.ERROR, e.getMessage());
+            } catch (NullPointerException e) {
+                LOGGER.log(Level.ERROR, e.getMessage());
             }
         }
         return issues;
     }
 
-    private Magazine createMagazine(LinkedList<String> issueValues) throws WrongNumberOfValuesException{
+    private Magazine createMagazine(LinkedList<String> issueValues) throws WrongNumberOfValuesException {
         if (issueValues.size() != 3) {
             throw new WrongNumberOfValuesException(String.format("Can not create object of Magazine. Wrong number of values %s. Need 3", issueValues.size()));
         }
-        String name = issueValues.get(0);
-        Integer numberOfPages = Integer.parseInt(issueValues.get(1));
-        AgeCategory ageCategory = AgeCategory.valueOf(issueValues.get(2).toUpperCase());
-        return new Magazine(name, numberOfPages, ageCategory);
+        String title = Optional.of(issueValues.get(0)).orElseThrow(()->new NullPointerException("Field title can not be null"));
+        Integer numberOfPages = Optional.of(Integer.parseInt(issueValues.get(1))).orElseThrow(()->new NullPointerException("Field numberOfpages can not be null"));
+        AgeCategory ageCategory = Optional.of(AgeCategory.valueOf(issueValues.get(2).toUpperCase())).orElseThrow(() -> new NullPointerException("Field ageCategory can not be null"));
+        return new Magazine(title, numberOfPages, ageCategory);
     }
 
-    private Newspaper createNewspaper(LinkedList<String> issueValues) throws WrongNumberOfValuesException{
+    private Newspaper createNewspaper(LinkedList<String> issueValues) throws WrongNumberOfValuesException {
         if (issueValues.size() != 3) {
             throw new WrongNumberOfValuesException(String.format("Can not create object of Newpaper. Wrong number of values %s. Need 3", issueValues.size()));
         }
-        String name = issueValues.get(0);
-        Integer numberOfPages = Integer.parseInt(issueValues.get(1));
-        Periodicity periodicity = Periodicity.valueOf(issueValues.get(2).toUpperCase());
-        return new Newspaper(name, numberOfPages, periodicity);
+        String title = Optional.of(issueValues.get(0)).orElseThrow(()->new NullPointerException("Field title can not be null"));
+        Integer numberOfPages = Optional.of(Integer.parseInt(issueValues.get(1))).orElseThrow(()->new NullPointerException("Field numberOfpages can not be null"));
+        Periodicity periodicity = Optional.of(Periodicity.valueOf(issueValues.get(2).toUpperCase())).orElseThrow(()->new NullPointerException(String.format("Field Periodicity can not be null")));
+        return new Newspaper(title, numberOfPages, periodicity);
     }
 
-    private Book createBook(LinkedList<String> issueValues) throws WrongNumberOfValuesException{
+    private Book createBook(LinkedList<String> issueValues) throws WrongNumberOfValuesException, NullPointerException {
         if (issueValues.size() != 4) {
             throw new WrongNumberOfValuesException(String.format("Can not create object of book. Wrong number of values %s. Need 4", issueValues.size()));
         }
-        String name = issueValues.get(0);
-        Integer numberOfPages = Integer.valueOf(issueValues.get(1));
-        Genre genre = Genre.valueOf(issueValues.get(2).toUpperCase());
-        String author = issueValues.get(3);
-        Book book = new Book(name, numberOfPages, genre, author);
+        String title = Optional.of(issueValues.get(0)).orElseThrow(()->new NullPointerException("Field title can not be null"));
+        Integer numberOfPages = Optional.of(Integer.valueOf(issueValues.get(1))).orElseThrow(()->new NullPointerException("Field numberOfpages can not be null"));
+        Genre genre = Optional.of(Genre.valueOf(issueValues.get(2).toUpperCase())).orElseThrow(()->new NullPointerException("Field genre can not be null"));
+        String author = Optional.ofNullable(issueValues.get(3)).orElseThrow(()->new NullPointerException(String.format("Field author can not be null")));
+        Book book = new Book(title, numberOfPages, genre, author);
         return book;
     }
-
-
-    /*public static void main(String[] args) {
-        Parser parser = new Parser();
-        Reader reader = new Reader();
-        IssueValidator validator = new IssueValidator();
-        IssueFactory factory = new IssueFactory();
-        try {
-            List<String> strings = reader.readDataFromFile("src/main/resources/data.txt");
-            List<String> validatedStrings = validator.validateData(strings);
-            List<LinkedList<String >> res = parser.parseData(validatedStrings);
-            List<Issue> result = factory.createIssue(res);
-
-            System.out.println(result);
-        } catch (NoFileException e) {
-            e.printStackTrace();
-        } catch (MissingDataException e) {
-            e.printStackTrace();
-        }
-    }*/
 }

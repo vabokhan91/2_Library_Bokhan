@@ -6,22 +6,22 @@ import com.vbokhan.library.generator.IdGenerator;
  * Created by vbokh on 03.06.2017.
  */
 public abstract class Issue {
-    private String name;
+    private String title;
     private Integer numberOfPages;
     private Integer id;
 
     public Issue(String name, Integer numberOfPages) {
         this.id = IdGenerator.nextId();
-        this.name = name;
+        this.title = name;
         this.numberOfPages = numberOfPages;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public Integer getNumberOfPages() {
@@ -38,7 +38,7 @@ public abstract class Issue {
 
     @Override
     public String toString() {
-        return "name='" + name + '\'' +
+        return "title='" + title + '\'' +
                 ", numberOfPages=" + numberOfPages;
     }
 
@@ -49,13 +49,13 @@ public abstract class Issue {
 
         Issue issue = (Issue) o;
 
-        if (getName() != null ? !getName().equals(issue.getName()) : issue.getName() != null) return false;
+        if (getTitle() != null ? !getTitle().equals(issue.getTitle()) : issue.getTitle() != null) return false;
         return getNumberOfPages() != null ? getNumberOfPages().equals(issue.getNumberOfPages()) : issue.getNumberOfPages() == null;
     }
 
     @Override
     public int hashCode() {
-        int result = getName() != null ? getName().hashCode() : 0;
+        int result = getTitle() != null ? getTitle().hashCode() : 0;
         result = 31 * result + (getNumberOfPages() != null ? getNumberOfPages().hashCode() : 0);
         return result;
     }

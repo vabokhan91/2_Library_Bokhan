@@ -1,11 +1,11 @@
 package com.vbokhan.library.parser;
 
 import com.vbokhan.library.exception.MissingDataException;
-import com.vbokhan.library.exception.NoFileException;
-import com.vbokhan.library.reader.Reader;
 import com.vbokhan.library.validator.IssueValidator;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

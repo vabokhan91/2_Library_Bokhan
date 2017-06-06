@@ -5,7 +5,6 @@ import com.vbokhan.library.factory.IssueFactory;
 import com.vbokhan.library.interfaces.Issue;
 import com.vbokhan.library.parser.Parser;
 import com.vbokhan.library.reader.Reader;
-import com.vbokhan.library.validator.IssueValidator;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

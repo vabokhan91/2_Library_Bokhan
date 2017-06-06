@@ -6,6 +6,7 @@ import com.vbokhan.library.entity.Newspaper;
 import com.vbokhan.library.enums.AgeCategory;
 import com.vbokhan.library.enums.Genre;
 import com.vbokhan.library.enums.Periodicity;
+import com.vbokhan.library.exception.MissingDataException;
 import com.vbokhan.library.interfaces.Issue;
 import com.vbokhan.library.parser.Parser;
 import com.vbokhan.library.reader.Reader;
@@ -27,9 +28,25 @@ public class IssueFactoryTest {
     private static Parser parser;
     private static IssueFactory factory;
     private final static String FILE_NAME = "src/main/resources/data.txt";
+    private static List<LinkedList<String>> testListForNull;
 
     @BeforeClass
     public static void init() {
+        testListForNull = new ArrayList<>();
+        LinkedList<String> list = new LinkedList<>();
+        list.add("Book");
+        list.add("SomeName");
+        list.add("322");
+        list.add("Adventure");
+        list.add(null);
+        testListForNull.add(list);
+        LinkedList<String> list1 = new LinkedList<>();
+        list1.add("Book");
+        list1.add("Three Comrades");
+        list1.add("322");
+        list1.add("novel");
+        list1.add("Erich Maria Remarque");
+        testListForNull.add(list1);
         testIssues = new ArrayList<>();
         reader = new Reader();
         parser = new Parser();
@@ -49,6 +66,14 @@ public class IssueFactoryTest {
     public void createIssue() throws Exception {
         List<Issue> actual = factory.createIssue(parser.parseData(reader.readDataFromFile(FILE_NAME)));
         assertEquals(testIssues, actual);
+    }
+
+    @Test()
+    public void createIssueNullTest() throws MissingDataException {
+        List<Issue> expected = new ArrayList<>();
+        expected.add(new Book("Three Comrades", 322, Genre.NOVEL, "Erich Maria Remarque"));
+        List<Issue> actual = factory.createIssue(testListForNull);
+        assertEquals(expected,actual);
     }
 
 
