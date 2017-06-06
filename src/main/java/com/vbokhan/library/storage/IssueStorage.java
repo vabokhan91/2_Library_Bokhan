@@ -10,6 +10,7 @@ import java.util.List;
  */
 
 /* Do we need this class ???*/
+
 public class IssueStorage {
     private List<Issue> issueStorage;
     private static IssueStorage instance;
