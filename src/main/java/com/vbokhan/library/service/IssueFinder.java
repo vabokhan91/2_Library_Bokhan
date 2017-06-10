@@ -1,6 +1,6 @@
 package com.vbokhan.library.service;
 
-import com.vbokhan.library.interfaces.Issue;
+import com.vbokhan.library.entity.Issue;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by vbokh on 06.06.2017.
  */
-public class Finder {
+public class IssueFinder {
     public static List<Issue> findByNumberOfPages(List<? extends Issue> issues, int from, int to) {
         ArrayList<Issue> foundIssues = new ArrayList<>();
         issues.stream().filter(issue -> issue.getNumberOfPages() >= from && issue.getNumberOfPages() <= to).forEach(foundIssues::add);

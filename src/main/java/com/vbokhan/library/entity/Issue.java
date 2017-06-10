@@ -1,4 +1,4 @@
-package com.vbokhan.library.interfaces;
+package com.vbokhan.library.entity;
 
 import com.vbokhan.library.generator.IdGenerator;
 
@@ -6,9 +6,9 @@ import com.vbokhan.library.generator.IdGenerator;
  * Created by vbokh on 03.06.2017.
  */
 public abstract class Issue {
+    private Integer id;
     private String title;
     private Integer numberOfPages;
-    private Integer id;
 
     public Issue(String name, Integer numberOfPages) {
         this.id = IdGenerator.nextId();
@@ -38,7 +38,7 @@ public abstract class Issue {
 
     @Override
     public String toString() {
-        return "title='" + title + '\'' +
+        return ", title='" + title + '\'' +
                 ", numberOfPages=" + numberOfPages;
     }
 

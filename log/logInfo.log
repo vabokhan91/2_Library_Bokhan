@@ -1,47 +1,34 @@
-2017-06-05 21:50:42.907 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.BOSOK
-2017-06-05 23:29:52.751 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-05 23:29:52.758 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-05 23:30:13.277 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-05 23:30:13.282 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 00:15:15.448 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 00:15:15.453 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 00:29:12.196 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 00:29:12.202 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 00:29:29.897 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 00:29:29.901 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 02:17:55.876 [main] ERROR com.vbokhan.library.factory.IssueFactory - No data was received for creating issue object
-2017-06-06 02:24:05.861 [main] ERROR com.vbokhan.library.factory.IssueFactory - No data was received for creating issue object
-2017-06-06 02:24:05.866 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of book. Wrong number of values 3. Need 4
-2017-06-06 02:24:05.867 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of book. Wrong number of values 5. Need 4
-2017-06-06 02:28:10.081 [main] ERROR com.vbokhan.library.factory.IssueFactory - No data was received for creating issue object
-2017-06-06 02:28:10.085 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of Newpaper. Wrong number of values 4. Need 3
-2017-06-06 02:28:10.085 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of book. Wrong number of values 5. Need 4
-2017-06-06 03:06:10.796 [main] ERROR com.vbokhan.library.factory.IssueFactory - No data was received for creating issue object
-2017-06-06 03:06:10.801 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of Newpaper. Wrong number of values 4. Need 3
-2017-06-06 03:06:10.802 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of book. Wrong number of values 5. Need 4
-2017-06-06 03:06:10.964 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 03:06:10.964 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 13:13:35.740 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 13:13:35.756 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 13:34:30.168 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 13:34:30.178 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 13:34:30.219 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 13:34:30.220 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 14:00:03.557 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.ADAD
-2017-06-06 14:00:28.891 [main] ERROR com.vbokhan.library.factory.IssueFactory - Can not create object of book. Wrong number of values 3. Need 4
-2017-06-06 14:11:51.345 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 14:11:51.349 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 14:14:31.824 [main] ERROR com.vbokhan.library.factory.IssueFactory - Field author can not be null
-2017-06-06 14:14:43.760 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 14:14:43.764 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 14:14:43.766 [main] ERROR com.vbokhan.library.factory.IssueFactory - Field author can not be null
-2017-06-06 14:49:42.992 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 14:49:43.003 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 14:49:43.006 [main] ERROR com.vbokhan.library.factory.IssueFactory - Field author can not be null
-2017-06-06 14:49:43.028 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 14:49:43.029 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 14:53:40.465 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 14:53:40.471 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
-2017-06-06 14:53:40.474 [main] ERROR com.vbokhan.library.factory.IssueFactory - Field author can not be null
-2017-06-06 14:53:40.496 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-06 14:53:40.501 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.enums.Genre.WRONGGENRE
+2017-06-09 20:07:50.382 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 14, title='Time', numberOfPages=100, ageCategory = Adults (18-150)} 
+2017-06-09 20:07:50.505 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 15, title='Funny pictures', numberOfPages=100, ageCategory = Children (0-17)} 
+2017-06-09 20:07:50.506 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.AgeCategory.WRONGAGECATEGORY
+2017-06-09 20:07:50.506 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 16, title='Capitan's daughter', numberOfPages=150, genre = Historical, author = 'Alexandre Pushkin'} 
+2017-06-09 20:07:50.507 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 17, title='Статский советник', numberOfPages=315, genre = Detective, author = 'Boris Akunin'} 
+2017-06-09 20:07:50.507 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 18, title='The Count of Monte Cristo', numberOfPages=560, genre = Adventure, author = 'Alexandre Dumas'} 
+2017-06-09 20:07:50.507 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-09 20:07:50.508 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Genre.WRONGGENRE
+2017-06-09 20:09:09.810 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 10, title='Three Comrades', numberOfPages=322, genre = Novel, author = 'Erich Maria Remarque'} 
+2017-06-09 20:09:09.814 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 11, title='Three Mushketeers', numberOfPages=300, genre = Novel, author = 'Alexandre Dumas'} 
+2017-06-09 20:09:09.815 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New newspaper is created :Newspaper{ id = 12, title='Times', numberOfPages=30, periodicity = Weekly} 
+2017-06-09 20:09:09.815 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New newspaper is created :Newspaper{ id = 13, title='The Guardian', numberOfPages=20, periodicity = Monthly} 
+2017-06-09 20:09:09.815 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Periodicity.WRONGPERIODICITY
+2017-06-09 20:09:09.816 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 14, title='Time', numberOfPages=100, ageCategory = Adults (18-150)} 
+2017-06-09 20:09:09.816 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 15, title='Funny pictures', numberOfPages=100, ageCategory = Children (0-17)} 
+2017-06-09 20:09:09.817 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.AgeCategory.WRONGAGECATEGORY
+2017-06-09 20:09:09.817 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 16, title='Capitan's daughter', numberOfPages=150, genre = Historical, author = 'Alexandre Pushkin'} 
+2017-06-09 20:09:09.817 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 17, title='Статский советник', numberOfPages=315, genre = Detective, author = 'Boris Akunin'} 
+2017-06-09 20:09:09.817 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 18, title='The Count of Monte Cristo', numberOfPages=560, genre = Adventure, author = 'Alexandre Dumas'} 
+2017-06-09 20:09:09.818 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-09 20:09:09.818 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Genre.WRONGGENRE
+2017-06-09 20:27:25.502 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 10, title='Three Comrades', numberOfPages=322, genre = Novel, author = 'Erich Maria Remarque'} 
+2017-06-09 20:27:25.507 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 11, title='Three Mushketeers', numberOfPages=300, genre = Novel, author = 'Alexandre Dumas'} 
+2017-06-09 20:27:25.508 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New newspaper is created :Newspaper{ id = 12, title='Times', numberOfPages=30, periodicity = Weekly} 
+2017-06-09 20:27:25.508 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New newspaper is created :Newspaper{ id = 13, title='The Guardian', numberOfPages=20, periodicity = Monthly} 
+2017-06-09 20:27:25.508 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Periodicity.WRONGPERIODICITY
+2017-06-09 20:27:25.509 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 14, title='Time', numberOfPages=100, ageCategory = Adults (18-150)} 
+2017-06-09 20:27:25.510 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 15, title='Funny pictures', numberOfPages=100, ageCategory = Children (0-17)} 
+2017-06-09 20:27:25.510 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.AgeCategory.WRONGAGECATEGORY
+2017-06-09 20:27:25.510 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 16, title='Capitan's daughter', numberOfPages=150, genre = Historical, author = 'Alexandre Pushkin'} 
+2017-06-09 20:27:25.511 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 17, title='Статский советник', numberOfPages=315, genre = Detective, author = 'Boris Akunin'} 
+2017-06-09 20:27:25.511 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 18, title='The Count of Monte Cristo', numberOfPages=560, genre = Adventure, author = 'Alexandre Dumas'} 
+2017-06-09 20:27:25.511 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
+2017-06-09 20:27:25.513 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Genre.WRONGGENRE

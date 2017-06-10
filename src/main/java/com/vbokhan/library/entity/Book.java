@@ -1,8 +1,5 @@
 package com.vbokhan.library.entity;
 
-import com.vbokhan.library.enums.Genre;
-import com.vbokhan.library.interfaces.Issue;
-
 /**
  * Created by vbokh on 03.06.2017.
  */
@@ -18,10 +15,10 @@ public class Book extends Issue {
 
     @Override
     public String toString() {
-        return "Book{ id= " + getId() + " " +
+        return "Book{ id = " + getId() +
                 super.toString() + "," +
-                " genre=" + genre +
-                ", author='" + author + '\'' +
+                " genre = " + genre +
+                ", author = '" + author + '\'' +
                 "} " ;
     }
 

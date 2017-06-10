@@ -3,10 +3,10 @@ package com.vbokhan.library.service;
 import com.vbokhan.library.entity.Book;
 import com.vbokhan.library.entity.Magazine;
 import com.vbokhan.library.entity.Newspaper;
-import com.vbokhan.library.enums.AgeCategory;
-import com.vbokhan.library.enums.Genre;
-import com.vbokhan.library.enums.Periodicity;
-import com.vbokhan.library.interfaces.Issue;
+import com.vbokhan.library.entity.AgeCategory;
+import com.vbokhan.library.entity.Genre;
+import com.vbokhan.library.entity.Periodicity;
+import com.vbokhan.library.entity.Issue;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -20,7 +20,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by vbokh on 06.06.2017.
  */
-public class SorterTest {
+public class IssueSorterTest {
     private static List<Issue> testListSortingIssues;
     private static List<Book> testListForSortingBooks;
 
@@ -51,9 +51,9 @@ public class SorterTest {
     }
 
     @Test
-    public void sortByNameASC() throws Exception {
+    public void sortByNameASCTest() throws Exception {
         String expected = "Capitan's daughter";
-        Sorter.sortByNameASC(testListSortingIssues);
+        IssueSorter.sortByNameASC(testListSortingIssues);
         String actual = testListSortingIssues.get(0).getTitle();
         assertEquals(expected, actual);
 
@@ -61,32 +61,32 @@ public class SorterTest {
 
     @Test
     public void sortByNameDESC() throws Exception {
-        Issue expected = new Newspaper("Times", 30, Periodicity.WEEKLY);
-        Sorter.sortByNameDESC(testListSortingIssues);
-        Issue actual = testListSortingIssues.get(0);
+        String expected = "Times";
+        IssueSorter.sortByNameDESC(testListSortingIssues);
+        String actual = testListSortingIssues.get(0).getTitle();
         assertEquals(expected, actual);
     }
 
     @Test
     public void sortByNumberOfPagesASC() throws Exception {
-        Issue expected = new Newspaper("The Guardian", 20, Periodicity.MONTHLY);
-        Sorter.sortByNumberOfPagesASC(testListSortingIssues);
-        Issue actual = testListSortingIssues.get(0);
+        String expected = "The Guardian";
+        IssueSorter.sortByNumberOfPagesASC(testListSortingIssues);
+        String actual = testListSortingIssues.get(0).getTitle();
         assertEquals(expected, actual);
     }
 
     @Test
     public void sortByNumberOfPagesDESC() throws Exception {
-        Issue expected = new Book("The Count of Monte Cristo", 560, Genre.ADVENTURE, "Alexandre Dumas");
-        Sorter.sortByNumberOfPagesDESC(testListSortingIssues);
-        Issue actual = testListSortingIssues.get(0);
+        String expected = "The Count of Monte Cristo";
+        IssueSorter.sortByNumberOfPagesDESC(testListSortingIssues);
+        String actual = testListSortingIssues.get(0).getTitle();
         assertEquals(expected, actual);
     }
 
     @Test
     public void sortByNameAndPages() throws Exception {
         int expected = 130;
-        Sorter.sortByNameAndPages(testListSortingIssues);
+        IssueSorter.sortByNameAndPages(testListSortingIssues);
         int actual = testListSortingIssues.get(0).getNumberOfPages();
         assertEquals(expected, actual);
     }
@@ -94,7 +94,7 @@ public class SorterTest {
     @Test
     public void sortBooksByGenre() throws Exception {
         Genre expected = Genre.ADVENTURE;
-        Sorter.sortBooksByGenre(testListForSortingBooks);
+        IssueSorter.sortBooksByGenre(testListForSortingBooks);
         Genre actual = testListForSortingBooks.get(0).getGenre();
         assertEquals(expected,actual);
     }

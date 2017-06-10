@@ -1,4 +1,4 @@
-package com.vbokhan.library.enums;
+package com.vbokhan.library.entity;
 
 /**
  * Created by vbokh on 04.06.2017.

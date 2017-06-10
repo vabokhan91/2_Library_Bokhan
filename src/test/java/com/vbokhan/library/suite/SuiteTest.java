@@ -1,11 +1,11 @@
 package com.vbokhan.library.suite;
 
 import com.vbokhan.library.factory.IssueFactoryTest;
-import com.vbokhan.library.parser.ParserTest;
-import com.vbokhan.library.reader.ReaderTest;
-import com.vbokhan.library.service.CalculatorTest;
-import com.vbokhan.library.service.FinderTest;
-import com.vbokhan.library.service.SorterTest;
+import com.vbokhan.library.parser.IssueParserTest;
+import com.vbokhan.library.reader.IssueReaderTest;
+import com.vbokhan.library.service.IssueCalculatorTest;
+import com.vbokhan.library.service.IssueFinderTest;
+import com.vbokhan.library.service.IssueSorterTest;
 import com.vbokhan.library.validator.IssueValidatorTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -15,12 +15,12 @@ import org.junit.runners.Suite;
  */
 
 @Suite.SuiteClasses({IssueFactoryTest.class,
-        ParserTest.class,
-        ReaderTest.class,
-        CalculatorTest.class,
-        SorterTest.class,
+        IssueParserTest.class,
+        IssueReaderTest.class,
+        IssueCalculatorTest.class,
+        IssueSorterTest.class,
         IssueValidatorTest.class,
-        FinderTest.class})
+        IssueFinderTest.class})
 @RunWith(Suite.class)
 public class SuiteTest {
 

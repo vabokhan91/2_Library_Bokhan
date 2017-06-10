@@ -1,6 +1,6 @@
 package com.vbokhan.library.storage;
 
-import com.vbokhan.library.interfaces.Issue;
+import com.vbokhan.library.entity.Issue;
 
 import java.util.ArrayList;
 import java.util.List;

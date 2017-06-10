@@ -1,5 +1,6 @@
 Book "Three Comrades" 322 novel "Erich Maria Remarque"
 Book "Three Mushketeers" 300 novel "Alexandre Dumas"
+Book "T/..hree Mush*keteers" 300 novel "Alexandre Dumas"
 Newspaper "Times" 30 weekly
 Newspaper "The Guardian" 20 monthly
 Newspaper "SomeName" 40 wrongPeriodicity

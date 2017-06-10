@@ -3,19 +3,19 @@ package com.vbokhan.library.factory;
 import com.vbokhan.library.entity.Book;
 import com.vbokhan.library.entity.Magazine;
 import com.vbokhan.library.entity.Newspaper;
-import com.vbokhan.library.enums.AgeCategory;
-import com.vbokhan.library.enums.Genre;
-import com.vbokhan.library.enums.Periodicity;
-import com.vbokhan.library.exception.MissingDataException;
-import com.vbokhan.library.interfaces.Issue;
-import com.vbokhan.library.parser.Parser;
-import com.vbokhan.library.reader.Reader;
+import com.vbokhan.library.entity.AgeCategory;
+import com.vbokhan.library.entity.Genre;
+import com.vbokhan.library.entity.Periodicity;
+import com.vbokhan.library.entity.Issue;
+import com.vbokhan.library.parser.IssueParser;
+import com.vbokhan.library.reader.IssueReader;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.Assert.*;
 
@@ -24,32 +24,16 @@ import static org.junit.Assert.*;
  */
 public class IssueFactoryTest {
     private static List<Issue> testIssues;
-    private static Reader reader;
-    private static Parser parser;
+    private static IssueReader issueReader;
+    private static IssueParser issueParser;
     private static IssueFactory factory;
-    private final static String FILE_NAME = "src/main/resources/data.txt";
-    private static List<LinkedList<String>> testListForNull;
+    private static final String FILE_NAME = IssueFactoryTest.class.getClassLoader().getResource("data/data.txt").getPath();
 
     @BeforeClass
     public static void init() {
-        testListForNull = new ArrayList<>();
-        LinkedList<String> list = new LinkedList<>();
-        list.add("Book");
-        list.add("SomeName");
-        list.add("322");
-        list.add("Adventure");
-        list.add(null);
-        testListForNull.add(list);
-        LinkedList<String> list1 = new LinkedList<>();
-        list1.add("Book");
-        list1.add("Three Comrades");
-        list1.add("322");
-        list1.add("novel");
-        list1.add("Erich Maria Remarque");
-        testListForNull.add(list1);
         testIssues = new ArrayList<>();
-        reader = new Reader();
-        parser = new Parser();
+        issueReader = new IssueReader();
+        issueParser = new IssueParser();
         factory = new IssueFactory();
         testIssues.add(new Book("Three Comrades", 322, Genre.NOVEL, "Erich Maria Remarque"));
         testIssues.add(new Book("Three Mushketeers", 300, Genre.NOVEL, "Alexandre Dumas"));
@@ -64,17 +48,9 @@ public class IssueFactoryTest {
 
     @Test
     public void createIssue() throws Exception {
-        List<Issue> actual = factory.createIssue(parser.parseData(reader.readDataFromFile(FILE_NAME)));
+        Optional<List<String>> dataFromFile = issueReader.readDataFromFile(FILE_NAME);
+        List<LinkedList<String>> parsedData = issueParser.parseData(dataFromFile);
+        List<Issue> actual = factory.createIssues(parsedData);
         assertEquals(testIssues, actual);
     }
-
-    @Test()
-    public void createIssueNullTest() throws MissingDataException {
-        List<Issue> expected = new ArrayList<>();
-        expected.add(new Book("Three Comrades", 322, Genre.NOVEL, "Erich Maria Remarque"));
-        List<Issue> actual = factory.createIssue(testListForNull);
-        assertEquals(expected,actual);
-    }
-
-
 }
