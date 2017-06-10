@@ -24,7 +24,7 @@ public class IssueReaderTest {
     @BeforeClass
     public static void init() {
         issueReader = new IssueReader();
-        listForTestingReader = Optional.ofNullable(new ArrayList<>());
+        listForTestingReader = Optional.of(new ArrayList<>());
         listForTestingReader.get().add("Book \"Three Comrades\" 322 novel \"Erich Maria Remarque\"");
         listForTestingReader.get().add("Book \"Three Mushketeers\" 300 novel \"Alexandre Dumas\"");
         listForTestingReader.get().add("Book \"T/..hree Mush*keteers\" 300 novel \"Alexandre Dumas\"");

@@ -3,8 +3,8 @@ package com.vbokhan.library.entity;
 /**
  * Created by vbokh on 04.06.2017.
  */
-public enum  AgeCategory {
-    CHILDREN("Children", 0,17), ADULTS("Adults",18,150);
+public enum AgeCategory {
+    CHILDREN("Children", 0, 17), ADULTS("Adults", 18, 150);
     private String categoryName;
     private int ageFrom;
     private int ageTo;

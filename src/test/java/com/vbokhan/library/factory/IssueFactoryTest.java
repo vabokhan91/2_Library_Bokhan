@@ -1,12 +1,6 @@
 package com.vbokhan.library.factory;
 
-import com.vbokhan.library.entity.Book;
-import com.vbokhan.library.entity.Magazine;
-import com.vbokhan.library.entity.Newspaper;
-import com.vbokhan.library.entity.AgeCategory;
-import com.vbokhan.library.entity.Genre;
-import com.vbokhan.library.entity.Periodicity;
-import com.vbokhan.library.entity.Issue;
+import com.vbokhan.library.entity.*;
 import com.vbokhan.library.parser.IssueParser;
 import com.vbokhan.library.reader.IssueReader;
 import org.junit.BeforeClass;
@@ -17,7 +11,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by vbokh on 05.06.2017.

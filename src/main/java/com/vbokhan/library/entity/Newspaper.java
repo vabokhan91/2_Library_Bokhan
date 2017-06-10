@@ -1,7 +1,5 @@
 package com.vbokhan.library.entity;
 
-import com.vbokhan.library.generator.IdGenerator;
-
 /**
  * Created by vbokh on 03.06.2017.
  */

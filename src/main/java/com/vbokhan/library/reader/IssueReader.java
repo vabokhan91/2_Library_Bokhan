@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  * Created by vbokh on 04.06.2017.
  */
 public class IssueReader {
-    private final static Logger LOGGER = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger();
 
     public Optional<List<String>> readDataFromFile(String fileName) throws NoFileException {
         if (fileName == null || fileName.isEmpty()) {
@@ -24,10 +24,12 @@ public class IssueReader {
         }
         Optional<List<String>> dataFromFile = null;
         try {
-//            need smth to do with so long line
-            dataFromFile = Optional.ofNullable(Files.lines(new File(fileName).toPath()).map(s -> s.trim()).filter(s -> !s.isEmpty()).collect(Collectors.toList()));
+            dataFromFile = Optional.ofNullable(Files.lines(new File(fileName).toPath())
+                    .map(s -> s.trim())
+                    .filter(s -> !s.isEmpty())
+                    .collect(Collectors.toList()));
         } catch (IOException e) {
-           LOGGER.log(Level.ERROR, "Error with file. " + e.getMessage());
+            LOGGER.log(Level.ERROR, "Error with file. " + e.getMessage());
         }
         return dataFromFile;
     }

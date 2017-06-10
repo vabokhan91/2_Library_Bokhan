@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by vbokh on 05.06.2017.
@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 public class IssueParserTest {
     private static List<List<String>> expected;
     private static Optional<List<String>> dataForParsing;
-    private static Optional<List<String>> nullList ;
+    private static Optional<List<String>> nullList;
     private static Optional<List<String>> emptyList;
     private static IssueParser issueParser;
     private static final String TEST_STRING1 = "Book \"Three Comrades\" 322 novel \"Erich Maria Remarque\"";
@@ -27,7 +27,7 @@ public class IssueParserTest {
     public static void init() {
         issueParser = new IssueParser();
         expected = new ArrayList<>();
-        nullList = null;
+        nullList = Optional.ofNullable(null);
         emptyList = Optional.of(new ArrayList<>());
         dataForParsing = Optional.of(new ArrayList<>());
         dataForParsing.get().add(TEST_STRING1);
@@ -53,13 +53,13 @@ public class IssueParserTest {
         assertEquals(expected, actual);
     }
 
-    @Test(expected = NullPointerException.class)
-    public void nullTest() throws WrongDataException{
+    @Test(expected = WrongDataException.class)
+    public void nullTest() throws WrongDataException {
         issueParser.parseData(nullList);
     }
 
     @Test(expected = WrongDataException.class)
-    public void emptyListTest() throws WrongDataException{
+    public void emptyListTest() throws WrongDataException {
         issueParser.parseData(emptyList);
     }
 

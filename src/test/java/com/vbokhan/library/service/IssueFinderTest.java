@@ -1,17 +1,13 @@
 package com.vbokhan.library.service;
 
-import com.vbokhan.library.entity.Book;
-import com.vbokhan.library.entity.Magazine;
-import com.vbokhan.library.entity.Newspaper;
-import com.vbokhan.library.entity.AgeCategory;
-import com.vbokhan.library.entity.Genre;
-import com.vbokhan.library.entity.Periodicity;
-import com.vbokhan.library.entity.Issue;
+import com.vbokhan.library.entity.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by vbokh on 06.06.2017.
@@ -39,7 +35,7 @@ public class IssueFinderTest {
     @Test
     public void findByNumberOfPagesTest() throws Exception {
         List<Issue> actual = IssueFinder.findByNumberOfPages(testIssues, 300, 400);
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -47,7 +43,7 @@ public class IssueFinderTest {
         List<Issue> expected = new ArrayList<>();
         expected.add(new Book("Three Comrades", 322, Genre.NOVEL, "Erich Maria Remarque"));
         List<Issue> actual = IssueFinder.findIssueByPreciseName(testIssues, "Three Comrades");
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -56,6 +52,6 @@ public class IssueFinderTest {
         expected.add(new Book("Three Comrades", 322, Genre.NOVEL, "Erich Maria Remarque"));
         expected.add(new Book("Three Mushketeers", 300, Genre.NOVEL, "Alexandre Dumas"));
         List<Issue> actual = IssueFinder.findIssueByPartialName(testIssues, "Three");
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 }

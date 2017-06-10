@@ -21,9 +21,9 @@ public class Magazine extends Issue {
 
     @Override
     public String toString() {
-        return "Magazine{ id = "+ getId() + super.toString() +
+        return "Magazine{ id = " + getId() + super.toString() +
                 ", ageCategory = " + ageCategory +
-                "} " ;
+                "} ";
     }
 
     @Override

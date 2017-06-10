@@ -1,11 +1,7 @@
 package com.vbokhan.library.factory;
 
 import com.vbokhan.library.entity.*;
-import com.vbokhan.library.entity.AgeCategory;
-import com.vbokhan.library.entity.Genre;
-import com.vbokhan.library.entity.Periodicity;
 import com.vbokhan.library.exception.WrongDataException;
-import com.vbokhan.library.entity.Issue;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,7 +13,7 @@ import java.util.List;
 /**
  * Created by vbokh on 04.06.2017.
  */
-public class IssueFactory {
+public class IssueFactory extends AbstractIssueFactory {
     private final static Logger LOGGER = LogManager.getLogger();
 
     public List<Issue> createIssues(List<LinkedList<String>> dataForCreatingIssue) throws WrongDataException {
@@ -27,7 +23,26 @@ public class IssueFactory {
         ArrayList<Issue> issues = new ArrayList<>();
         for (LinkedList<String> issueValues : dataForCreatingIssue) {
             try {
-                createIssue(issues, issueValues);
+                if (issueValues == null || issueValues.isEmpty()) {
+                    throw new WrongDataException("No data was received for creating issue object");
+                }
+                IssueType issueType = IssueType.valueOf(issueValues.pop().toUpperCase());
+                switch (issueType) {
+                    case BOOK:
+                        Book book = createBook(issueValues);
+                        issues.add(book);
+                        break;
+                    case NEWSPAPER:
+                        Newspaper newspaper = createNewspaper(issueValues);
+                        issues.add(newspaper);
+                        break;
+                    case MAGAZINE:
+                        Magazine magazine = createMagazine(issueValues);
+                        issues.add(magazine);
+                        break;
+                    default:
+                        throw new WrongDataException(String.format("Unknown type of issue %s", issueType));
+                }
             } catch (WrongDataException e) {
                 LOGGER.log(Level.ERROR, e.getMessage());
             } catch (IllegalArgumentException e) {
@@ -35,29 +50,6 @@ public class IssueFactory {
             }
         }
         return issues;
-    }
-
-    private void createIssue(List<Issue> issues, LinkedList<String> issueValues) throws WrongDataException {
-        if (issueValues == null || issueValues.isEmpty()) {
-            throw new WrongDataException("No data was received for creating issue object");
-        }
-        TypeIssue issueType = TypeIssue.valueOf(issueValues.pop().toUpperCase());
-        switch (issueType) {
-            case BOOK:
-                Book book = createBook(issueValues);
-                issues.add(book);
-                break;
-            case NEWSPAPER:
-                Newspaper newspaper = createNewspaper(issueValues);
-                issues.add(newspaper);
-                break;
-            case MAGAZINE:
-                Magazine magazine = createMagazine(issueValues);
-                issues.add(magazine);
-                break;
-            default:
-                throw new WrongDataException(String.format("Unknown type of issue %s", issueType));
-        }
     }
 
     private Magazine createMagazine(LinkedList<String> issueValues) throws WrongDataException {
@@ -84,7 +76,7 @@ public class IssueFactory {
         return newspaper;
     }
 
-    private Book createBook(LinkedList<String> issueValues) throws WrongDataException{
+    private Book createBook(LinkedList<String> issueValues) throws WrongDataException {
         if (issueValues.size() != 4) {
             throw new WrongDataException(String.format("Can not create object of book. Wrong number of values %s. Need 4", issueValues.size()));
         }

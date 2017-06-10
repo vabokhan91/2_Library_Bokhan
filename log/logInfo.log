@@ -1,34 +1,31 @@
-2017-06-09 20:07:50.382 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 14, title='Time', numberOfPages=100, ageCategory = Adults (18-150)} 
-2017-06-09 20:07:50.505 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 15, title='Funny pictures', numberOfPages=100, ageCategory = Children (0-17)} 
-2017-06-09 20:07:50.506 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.AgeCategory.WRONGAGECATEGORY
-2017-06-09 20:07:50.506 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 16, title='Capitan's daughter', numberOfPages=150, genre = Historical, author = 'Alexandre Pushkin'} 
-2017-06-09 20:07:50.507 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 17, title='Статский советник', numberOfPages=315, genre = Detective, author = 'Boris Akunin'} 
-2017-06-09 20:07:50.507 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 18, title='The Count of Monte Cristo', numberOfPages=560, genre = Adventure, author = 'Alexandre Dumas'} 
-2017-06-09 20:07:50.507 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-09 20:07:50.508 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Genre.WRONGGENRE
-2017-06-09 20:09:09.810 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 10, title='Three Comrades', numberOfPages=322, genre = Novel, author = 'Erich Maria Remarque'} 
-2017-06-09 20:09:09.814 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 11, title='Three Mushketeers', numberOfPages=300, genre = Novel, author = 'Alexandre Dumas'} 
-2017-06-09 20:09:09.815 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New newspaper is created :Newspaper{ id = 12, title='Times', numberOfPages=30, periodicity = Weekly} 
-2017-06-09 20:09:09.815 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New newspaper is created :Newspaper{ id = 13, title='The Guardian', numberOfPages=20, periodicity = Monthly} 
-2017-06-09 20:09:09.815 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Periodicity.WRONGPERIODICITY
-2017-06-09 20:09:09.816 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 14, title='Time', numberOfPages=100, ageCategory = Adults (18-150)} 
-2017-06-09 20:09:09.816 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 15, title='Funny pictures', numberOfPages=100, ageCategory = Children (0-17)} 
-2017-06-09 20:09:09.817 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.AgeCategory.WRONGAGECATEGORY
-2017-06-09 20:09:09.817 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 16, title='Capitan's daughter', numberOfPages=150, genre = Historical, author = 'Alexandre Pushkin'} 
-2017-06-09 20:09:09.817 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 17, title='Статский советник', numberOfPages=315, genre = Detective, author = 'Boris Akunin'} 
-2017-06-09 20:09:09.817 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 18, title='The Count of Monte Cristo', numberOfPages=560, genre = Adventure, author = 'Alexandre Dumas'} 
-2017-06-09 20:09:09.818 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-09 20:09:09.818 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Genre.WRONGGENRE
-2017-06-09 20:27:25.502 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 10, title='Three Comrades', numberOfPages=322, genre = Novel, author = 'Erich Maria Remarque'} 
-2017-06-09 20:27:25.507 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 11, title='Three Mushketeers', numberOfPages=300, genre = Novel, author = 'Alexandre Dumas'} 
-2017-06-09 20:27:25.508 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New newspaper is created :Newspaper{ id = 12, title='Times', numberOfPages=30, periodicity = Weekly} 
-2017-06-09 20:27:25.508 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New newspaper is created :Newspaper{ id = 13, title='The Guardian', numberOfPages=20, periodicity = Monthly} 
-2017-06-09 20:27:25.508 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Periodicity.WRONGPERIODICITY
-2017-06-09 20:27:25.509 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 14, title='Time', numberOfPages=100, ageCategory = Adults (18-150)} 
-2017-06-09 20:27:25.510 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 15, title='Funny pictures', numberOfPages=100, ageCategory = Children (0-17)} 
-2017-06-09 20:27:25.510 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.AgeCategory.WRONGAGECATEGORY
-2017-06-09 20:27:25.510 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 16, title='Capitan's daughter', numberOfPages=150, genre = Historical, author = 'Alexandre Pushkin'} 
-2017-06-09 20:27:25.511 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 17, title='Статский советник', numberOfPages=315, genre = Detective, author = 'Boris Akunin'} 
-2017-06-09 20:27:25.511 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 18, title='The Count of Monte Cristo', numberOfPages=560, genre = Adventure, author = 'Alexandre Dumas'} 
-2017-06-09 20:27:25.511 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.TypeIssue.WRONGTYPE
-2017-06-09 20:27:25.513 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Genre.WRONGGENRE
+2017-06-10 12:49:52.124 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 16, title='Capitan's daughter', numberOfPages=150, genre = Historical, author = 'Alexandre Pushkin'} 
+2017-06-10 12:49:52.212 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 17, title='Статский советник', numberOfPages=315, genre = Detective, author = 'Boris Akunin'} 
+2017-06-10 12:49:52.213 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 18, title='The Count of Monte Cristo', numberOfPages=560, genre = Adventure, author = 'Alexandre Dumas'} 
+2017-06-10 12:49:52.213 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.IssueType.WRONGTYPE
+2017-06-10 12:49:52.214 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Genre.WRONGGENRE
+2017-06-10 12:50:45.215 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 10, title='Three Comrades', numberOfPages=322, genre = null, author = 'Erich Maria Remarque'} 
+2017-06-10 12:50:45.224 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 11, title='Three Mushketeers', numberOfPages=300, genre = null, author = 'Alexandre Dumas'} 
+2017-06-10 12:50:45.225 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New newspaper is created :Newspaper{ id = 12, title='Times', numberOfPages=30, periodicity = Weekly} 
+2017-06-10 12:50:45.225 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New newspaper is created :Newspaper{ id = 13, title='The Guardian', numberOfPages=20, periodicity = Monthly} 
+2017-06-10 12:50:45.225 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Periodicity.WRONGPERIODICITY
+2017-06-10 12:50:45.226 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 14, title='Time', numberOfPages=100, ageCategory = Adults (18-150)} 
+2017-06-10 12:50:45.227 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 15, title='Funny pictures', numberOfPages=100, ageCategory = Children (0-17)} 
+2017-06-10 12:50:45.227 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.AgeCategory.WRONGAGECATEGORY
+2017-06-10 12:50:45.227 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 16, title='Capitan's daughter', numberOfPages=150, genre = Historical, author = 'Alexandre Pushkin'} 
+2017-06-10 12:50:45.228 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 17, title='Статский советник', numberOfPages=315, genre = Detective, author = 'Boris Akunin'} 
+2017-06-10 12:50:45.228 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 18, title='The Count of Monte Cristo', numberOfPages=560, genre = Adventure, author = 'Alexandre Dumas'} 
+2017-06-10 12:50:45.228 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.IssueType.WRONGTYPE
+2017-06-10 12:50:45.229 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Genre.WRONGGENRE
+2017-06-10 12:51:05.311 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 10, title='Three Comrades', numberOfPages=322, genre = Novel, author = 'Erich Maria Remarque'} 
+2017-06-10 12:51:05.316 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 11, title='Three Mushketeers', numberOfPages=300, genre = Novel, author = 'Alexandre Dumas'} 
+2017-06-10 12:51:05.317 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New newspaper is created :Newspaper{ id = 12, title='Times', numberOfPages=30, periodicity = Weekly} 
+2017-06-10 12:51:05.317 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New newspaper is created :Newspaper{ id = 13, title='The Guardian', numberOfPages=20, periodicity = Monthly} 
+2017-06-10 12:51:05.318 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Periodicity.WRONGPERIODICITY
+2017-06-10 12:51:05.318 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 14, title='Time', numberOfPages=100, ageCategory = Adults (18-150)} 
+2017-06-10 12:51:05.318 [main] INFO  com.vbokhan.library.factory.IssueFactory -  New magazine is created Magazine{ id = 15, title='Funny pictures', numberOfPages=100, ageCategory = Children (0-17)} 
+2017-06-10 12:51:05.319 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.AgeCategory.WRONGAGECATEGORY
+2017-06-10 12:51:05.319 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 16, title='Capitan's daughter', numberOfPages=150, genre = Historical, author = 'Alexandre Pushkin'} 
+2017-06-10 12:51:05.319 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 17, title='Статский советник', numberOfPages=315, genre = Detective, author = 'Boris Akunin'} 
+2017-06-10 12:51:05.320 [main] INFO  com.vbokhan.library.factory.IssueFactory - New book is created : Book{ id = 18, title='The Count of Monte Cristo', numberOfPages=560, genre = Adventure, author = 'Alexandre Dumas'} 
+2017-06-10 12:51:05.320 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.IssueType.WRONGTYPE
+2017-06-10 12:51:05.320 [main] ERROR com.vbokhan.library.factory.IssueFactory - No enum constant com.vbokhan.library.entity.Genre.WRONGGENRE

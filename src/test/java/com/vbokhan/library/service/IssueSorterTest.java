@@ -1,12 +1,6 @@
 package com.vbokhan.library.service;
 
-import com.vbokhan.library.entity.Book;
-import com.vbokhan.library.entity.Magazine;
-import com.vbokhan.library.entity.Newspaper;
-import com.vbokhan.library.entity.AgeCategory;
-import com.vbokhan.library.entity.Genre;
-import com.vbokhan.library.entity.Periodicity;
-import com.vbokhan.library.entity.Issue;
+import com.vbokhan.library.entity.*;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -96,7 +90,7 @@ public class IssueSorterTest {
         Genre expected = Genre.ADVENTURE;
         IssueSorter.sortBooksByGenre(testListForSortingBooks);
         Genre actual = testListForSortingBooks.get(0).getGenre();
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 
 }

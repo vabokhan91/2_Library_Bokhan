@@ -19,7 +19,7 @@ public class Book extends Issue {
                 super.toString() + "," +
                 " genre = " + genre +
                 ", author = '" + author + '\'' +
-                "} " ;
+                "} ";
     }
 
     public Genre getGenre() {
