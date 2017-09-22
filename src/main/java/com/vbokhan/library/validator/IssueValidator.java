@@ -31,4 +31,8 @@ public class IssueValidator {
         }
         return flag;
     }
+
+    public void go() {
+
+    }
 }
